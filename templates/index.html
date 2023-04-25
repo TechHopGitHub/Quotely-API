@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quotely API</title>
+    <style>
+      body {
+        font-family: Comfortaa, sans-serif;
+        text-align: center;
+        padding: 20px;
+      }
+      h1 {
+        margin-top: 0;
+        color: #007bff;
+      }
+      p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+      }
+      button {
+        font-size: 1.2em;
+        padding: 10px 20px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-right: 10px;
+      }
+      button:hover {
+        background-color: #0062cc;
+      }
+      .footer {
+        margin-top: 50px;
+        font-size: 0.8em;
+        color: #888;
+        font-family: 'Comfortaa', cursive;
+      }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:400" rel="stylesheet">
+    <script>
+      window.addEventListener('load', function() {
+        var yearElem = document.getElementById('currentYear');
+        var currentYear = new Date().getFullYear();
+        yearElem.innerText = currentYear;
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Quotely API</h1>
+    <p>API available!</p>
+    <button onclick="window.location.href='https://github.com/yourusername/yourrepository'">Github Repo</button>
+    <button onclick="window.location.href='https://readthedocs.io/'">Documentation</button>
+    <div class="footer">
+      CodeSoft Productions <br> 
+      &copy; <span id="currentYear"></span> - 2023
+    </div>
+  </body>
+</html>
